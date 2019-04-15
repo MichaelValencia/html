@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            /*
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+            grid-gap is used when using the same spacing
+            */
+            grid-gap: 1em;
+        }
+
+        .wrapper>div {
+            background: #eee;
+            padding: 1em;
+        }
+
+        .wrapper>div:nth-child(odd) {
+            background: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem expedita quisquam iste harum
+            suscipit omnis alias culpa optio quae asperiores modi, nobis cumque error deleniti delectus tenetur
+            officiis dignissimos veritatis repudiandae obcaecati perferendis et quia ipsa. Doloribus, neque reiciendis
+            odit odio, placeat corrupti praesentium consectetur distinctio doloremque nesciunt nisi illum optio ullam
+            sit nobis dolor adipisci minus ea est? Tempore sed, error deserunt repellat iusto magnam aliquid minus
+            repudiandae, voluptates quam expedita? Quaerat sed maxime aperiam ipsam eveniet repudiandae officia?</div>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat ut velit quasi laboriosam voluptatibus
+            similique aspernatur ratione suscipit, quidem doloribus sapiente error cumque praesentium quas quisquam
+            dignissimos aperiam atque facilis.
+        </div>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem expedita quisquam iste harum
+            suscipit omnis alias culpa optio quae asperiores modi, nobis cumque error deleniti delectus tenetur
+            officiis dignissimos veritatis repudiandae obcaecati perferendis et quia ipsa. Doloribus, neque reiciendis
+            odit odio, placeat corrupti praesentium consectetur distinctio doloremque nesciunt nisi illum optio ullam
+            sit nobis dolor adipisci minus ea est? Tempore sed, error deserunt repellat iusto magnam aliquid minus
+            repudiandae, voluptates quam expedita? Quaerat sed maxime aperiam ipsam eveniet repudiandae officia?</div>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat ut velit quasi laboriosam voluptatibus
+            similique aspernatur ratione suscipit, quidem doloribus sapiente error cumque praesentium quas quisquam
+            dignissimos aperiam atque facilis.
+        </div>
+    </div>
+</body>
+
+</html>
